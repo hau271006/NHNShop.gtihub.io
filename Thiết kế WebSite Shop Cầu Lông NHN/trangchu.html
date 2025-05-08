@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Categories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style1.css"> <!-- Link to external CSS -->
+    
+</head>
+
+<body class="font-roboto">
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.-i20YR2IKLzY0DX8Rx-RNQHaB1&pid=Api&P=0&h=180" alt="Logo" class="logo" />
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="trangchu.html" class="nav-item active">TRANG CHỦ</a></li>
+                        <li><a href="sanpham.html" class="nav-item">SẢN PHẨM</a></li>
+                        <li><a href="tintuc.html" class="nav-item">TIN TỨC</a></li>
+                        <li><a href="giamgia.html" class="nav-item">GIẢM GIÁ</a></li>
+                        <li><a href="huongdan.html" class="nav-item">HƯỚNG DẪN</a></li>
+                        <li><a href="gioithieu.html" class="nav-item">GIỚI THIỆU</a></li>
+                        <li><a href="hotro.html" class="nav-item">LIÊN HỆ</a></li>
+                    </ul>
+                </nav>
+                <div class="header">
+                    
+                
+                  <div class="search-bar">
+                    <input type="text" placeholder="Tìm sản phẩm..." />
+                    <button onclick="handleSearch()">Tìm</button>
+                  </div>
+              
+                  <div class="header-actions">
+                    <div class="auth-links">
+                      <a href="#" onclick="openModal('loginModal')">Đăng nhập</a> /
+                      <a href="#" onclick="openModal('registerModal')">Đăng ký</a>
+                    </div>
+              
+                    <div class="cart">
+                      <span class="cart-icon">🛒</span>
+                      <span class="cart-count" id="cart-count">2</span>
+                    </div>
+                  </div>
+                </div>
+              
+            
+
+<!-- Modal Đăng Nhập -->
+<div class="modal" id="loginModal" style="display:none;">
+    <div class="modal-content p-4 bg-white rounded shadow-lg">
+        <span class="close" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Đăng Nhập</h2>
+        <input type="text" placeholder="Email hoặc tên đăng nhập" class="p-2 mb-2 w-full border rounded" />
+        <input type="password" placeholder="Mật khẩu" class="p-2 mb-2 w-full border rounded" />
+        <button class="bg-blue-500 text-white p-2 w-full rounded">Đăng nhập</button>
+    </div>
+</div>
+
+<!-- Modal Đăng Ký -->
+<div class="modal" id="registerModal" style="display:none;">
+    <div class="modal-content p-4 bg-white rounded shadow-lg">
+        <span class="close" onclick="closeModal('registerModal')">&times;</span>
+        <h2>Đăng Ký</h2>
+        <input type="text" placeholder="Họ và tên" class="p-2 mb-2 w-full border rounded" />
+        <input type="email" placeholder="Email" class="p-2 mb-2 w-full border rounded" />
+        <input type="password" placeholder="Mật khẩu" class="p-2 mb-2 w-full border rounded" />
+        <button class="bg-blue-500 text-white p-2 w-full rounded">Đăng ký</button>
+    </div>
+</div>
+                
+                  <script>
+                    function handleSearch() {
+                      const input = document.querySelector('.search-bar input').value;
+                      alert("Đang tìm: " + input);
+                    }
+                
+                    function openModal(id) {
+                      document.getElementById(id).style.display = "flex";
+                    }
+                
+                    function closeModal(id) {
+                      document.getElementById(id).style.display = "none";
+                    }
+                  </script>
+    </header>
+    
+    
+      <!-- vợt cầu lông -->
+      <section>
+        <div class="section-header">
+          <h2 class="section-title">VỢT CẦU LÔNG</h2>
+          <a class="section-link" href="#">› Xem thêm</a>
+        </div>
+  
+        <div class="product-scroll">
+          <ul class="product-list">
+            <!-- Item 1 -->
+            <li class="product-item">
+              <div class="sale-tag">-10%</div>
+              <img src="https://storage.googleapis.com/a1aa/image/5c108f38-4f37-4fe9-e8c4-8720cbc27c80.jpg" alt="Vợt cầu lông Victor Majester Model" class="product-image" />
+              <p class="product-name">Vợt cầu lông Victor Majester Model</p>
+              <p class="current-price">4.090.000 ₫</p>
+            </li>
+  
+            <!-- Item 2 -->
+            <li class="product-item">
+              <div class="sale-tag">-55%</div>
+              <img src="https://storage.googleapis.com/a1aa/image/2ced81cf-5746-4a28-6de4-c588ce207ec7.jpg" alt="Vợt cầu lông Victor Arrow Line 40" class="product-image" />
+              <p class="product-name">Vợt Cầu Lông Victor Arrow Line 40</p>
+              <p class="old-price">1.590.000 ₫</p>
+              <p class="discount-price">712.500 ₫</p>
+            </li>
+  
+            <!-- Item 3 -->
+            <li class="product-item">
+              <img src="https://storage.googleapis.com/a1aa/image/ec3fea96-ebdc-4cba-f4b8-186f4d1e27e0.jpg" alt="Vợt cầu lông Victor Rogue 2 Pro" class="product-image" />
+              <p class="product-name">Vợt Cầu Lông Victor Rogue 2 Pro</p>
+              <p class="current-price">3.690.000 ₫</p>
+            </li>
+  
+            <!-- Item 4 -->
+            <li class="product-item">
+              <div class="new-tag">NEW</div>
+              <img src="https://storage.googleapis.com/a1aa/image/7685fcbb-2d98-4235-4cda-1db54405de43.jpg" alt="Vợt cầu lông Victor Auraspeed SSE" class="product-image" />
+              <p class="product-name">Vợt cầu lông Victor Auraspeed SSE</p>
+              <p class="current-price">4.500.000 ₫</p>
+            </li>
+  
+            <!-- Item 5 -->
+            <li class="product-item">
+              <img src="https://storage.googleapis.com/a1aa/image/386afb0b-a55b-40af-ddc4-8f5d60f6ed3a.jpg" alt="Vợt cầu lông Jetspeed ZX 103 clb" class="product-image" />
+              <p class="product-name">Vợt cầu lông Jetspeed ZX 103 clb</p>
+              <p class="current-price">3.700.000 ₫</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- áo cầu lông -->
+    <section>
+      <div class="section-header">
+        <h2 class="section-title">ÁO CẦU LÔNG</h2>
+        <a class="section-link" href="#">› Xem thêm</a>
+      </div>
+
+      <div class="product-scroll">
+        <ul class="product-list">
+          <!-- Item 1 -->
+          <li class="product-item">
+            <div class="sale-tag">-10%</div>
+            <img src="https://vn-test-11.slatic.net/p/c634bddfb986bc431a55245c26a82489.jpg" alt="Áo cầu lông Yonex xanh" class="product-image" />
+            
+            <p class="product-name">Áo cầu lông Yonex xanh</p>
+            <p class="old-price">200.000</p>
+            <p class="current-price">180.000 ₫</p>
+          </li>
+
+          <!-- Item 2 -->
+          <li class="product-item">
+            <div class="sale-tag">-50%</div>
+            <img src="https://cdn.shopvnb.com/img/600x600/uploads/san_pham/ao-cau-long-yonex-training-003-do-1.webp" alt="Áo cầu lông Yonex đỏ" class="product-image" />
+            <p class="product-name">Áo cầu lông Yonex đỏ</p>
+            <p class="old-price">200.000 ₫</p>
+            <p class="discount-price">100.000 ₫</p>
+          </li>
+
+          <!-- Item 3 -->
+          <li class="product-item">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.3ZLzTECXAB2l41ZptA7MMgHaHa&pid=Api&P=0&h=180" alt="Áo cầu lông trắng" class="product-image" />
+           
+            <p class="product-name">Áo cầu lông trắng</p>
+            <p class="current-price">200.000 ₫</p>
+          </li>
+
+          <!-- Item 4 -->
+          <li class="product-item">
+            <div class="new-tag">NEW</div>
+            <img src="https://shopvnb.com/uploads/san_pham/ao-cau-long-yonex-ct06-nam-den-1.webp" alt="Áo cầu lông đen" class="product-image" />
+            <p class="product-name">Áo cầu lông đen</p>
+            <p class="current-price">250.000 ₫</p>
+          </li>
+
+          <!-- Item 5 -->
+          <li class="product-item">
+            <img src="https://cabasports.vn/wp-content/uploads/2020/02/ao-cau-long-cabasports-vang-19009.jpg" alt="Áo cầu lông màu vàng" class="product-image" />
+            <p class="product-name">Áo cầu lông màu vàng</p>
+            <p class="current-price">200.000 ₫</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <!-- quần cầu lông -->
+  <section>
+    <div class="section-header">
+      <h2 class="section-title">QUẦN CẦU LÔNG</h2>
+      <a class="section-link" href="#">› Xem thêm</a>
+    </div>
+
+    <div class="product-scroll">
+      <ul class="product-list">
+        <!-- Item 1 -->
+        <li class="product-item">
+          <div class="sale-tag">-10%</div>
+          <img src="https://shopvnb.com/uploads/gallery/248_yonex_den_nam.jpg" alt="Quần cầu lông đen" class="product-image" />
+          <p class="product-name">Quần cầu lông đen</p>
+          <p class="old-price">200.000</p>
+          <p class="current-price">180.000 ₫</p>
+        </li>
+
+        <!-- Item 2 -->
+        <li class="product-item">
+          <div class="sale-tag">-50%</div>
+          <img src="https://shopvnb.com/uploads/san_pham/quan-cau-long-yonex-065-xanh-navy-1.webp" alt="Quần cầu lông màu lam" class="product-image" />
+          <p class="product-name">Quần cầu lông màu lam</p>
+          <p class="old-price">200.000 ₫</p>
+          <p class="discount-price">100.000 ₫</p>
+        </li>
+
+        <!-- Item 3 -->
+        <li class="product-item">
+          <img src="https://cdn.shopvnb.com/img/600x600/uploads/gallery/quan-cau-long-yonex-9224-do_1721240415.webp" alt="Quần cầu lông màu đỏ" class="product-image" />
+          <p class="product-name">Quần cầu lông màu đỏ</p>
+          <p class="current-price"> 250.000₫</p>
+        </li>
+
+        <!-- Item 4 -->
+        <li class="product-item">
+          <div class="new-tag">NEW</div>
+          <img src="https://shopvnb.com/uploads/gallery/7_40.jpg" alt="Quần cầu lông màu trắng" class="product-image" />
+          <p class="product-name">Quần cầu lông màu trắng</p>
+          <p class="current-price">300.000 ₫</p>
+        </li>
+
+        <!-- Item 5 -->
+        <li class="product-item">
+          <img src="https://cdn.shopvnb.com/img/600x600/uploads/gallery/quan-cau-long-yonex-9225-vang_1721240035.webp" alt="quần cầu lông màu vàng" class="product-image" />
+          <p class="product-name">Quần cầu lông màu vàng</p>
+          <p class="current-price">200.000 ₫</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+<!-- Giày cầu lông -->
+<section>
+  <div class="section-header">
+    <h2 class="section-title">GIÀY CẦU LÔNG</h2>
+    <a class="section-link" href="#">› Xem thêm</a>
+  </div>
+
+  <div class="product-scroll">
+    <ul class="product-list">
+      <!-- Item 1 -->
+      <li class="product-item">
+        <div class="sale-tag">-10%</div>
+        <img src="https://shopvnb.com/uploads/gallery/giay-cau-long-yonex-power-cushion-infinity-2-xanh-duong-chinh-hang-1.jpg" alt="giày cầu lông" class="product-image" />
+        <p class="product-name">Giày cầu lông Yonex xanh</p>
+        <p class="old-price">1.000.000</p>
+        <p class="current-price">900.000 ₫</p>
+      </li>
+
+      <!-- Item 2 -->
+      <li class="product-item">
+        <div class="sale-tag">-60%</div>
+        <img src="https://shopvnb.com/uploads/gallery/giay-cau-long-yonex-aerus-z2-woman-tim-den-chinh-hang.png" alt="giày cầu lông tím" class="product-image" />
+        <p class="product-name">Giày cầu lông tím</p>
+        <p class="old-price">1.200.000 ₫</p>
+        <p class="discount-price">840.000 ₫</p>
+      </li>
+
+      <!-- Item 3 -->
+      <li class="product-item">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.xLKVc8QKT5VEuQDGizC45wHaHa&pid=Api&P=0&h=180" alt="giày cầu lông vàng" class="product-image" />
+        <p class="product-name">giày cầu lông vàng</p>
+        <p class="current-price">1.300.000 ₫</p>
+      </li>
+
+      <!-- Item 4 -->
+      <li class="product-item">
+        <div class="new-tag">NEW</div>
+        <img src="https://shopvnb.com/uploads/gallery/giay-cau-long-yonex-shb-39ex-wt-gd-chinh-hang%20copy.jpg" alt="Giày cầu lông trắng đen" class="product-image" />
+        <p class="product-name">Giày cầu lông trắng đen</p>
+        <p class="current-price">2.000.000 ₫</p>
+      </li>
+
+      <!-- Item 5 -->
+      <li class="product-item">
+        <img src="https://cdn.shopvnb.com/uploads/gallery/giay-cau-long-yonex-shb220cr-trang-hong-noi-dia-trung_1718390672.webp" alt="giày cầu lông hồng" class="product-image" />
+        <p class="product-name">Giày cầu lông hồng</p>
+        <p class="current-price">1.500.000 ₫</p>
+      </li>
+    </ul>
+  </div>
+</section>
+</div>
+<!-- ba lô yonex -->
+<section>
+  <div class="section-header">
+    <h2 class="section-title">BA LÔ Yonex</h2>
+    <a class="section-link" href="#">› Xem thêm</a>
+  </div>
+
+  <div class="product-scroll">
+    <ul class="product-list">
+      <!-- Item 1 -->
+      <li class="product-item">
+        <div class="sale-tag">-10%</div>
+        <img src="https://tse3.mm.bing.net/th?id=OIP.Nq9vPbFETOagAR9mT18UowHaJ4&pid=Api&P=0&h=180" alt="ba lô trắng" class="product-image" />
+        <p class="product-name">Ba lô yonex trắng</p>
+        <P class="old-price">700.000</P>
+        <p class="current-price">630.000 ₫</p>
+      </li>
+
+      <!-- Item 2 -->
+      <li class="product-item">
+        <div class="sale-tag">-70%</div>
+        <img src="https://cdn.shopvnb.com/uploads/gallery/balo-cau-long-yonex-bag2312t01-dark-cobalt-chinh-hang_1721076535.webp" alt=" ba lo yonex xanh" class="product-image" />
+        <p class="product-name">Ba lô yonex xanh</p>
+        <p class="old-price">800.000 ₫</p>
+        <p class="discount-price">240.000 ₫</p>
+      </li>
+
+      <!-- Item 3 -->
+      <li class="product-item">
+        <img src="https://shopvnb.com/uploads/gallery/balo-cau-long-yonex-2913h-sr-xanh-chuoi-chinh-hang.jpg" alt="ba lo yonex" class="product-image" />
+        <p class="product-name">Ba lô Yonex xanh lá</p>
+        <p class="current-price">500.000 ₫</p>
+      </li>
+
+      <!-- Item 4 -->
+      <li class="product-item">
+        <div class="new-tag">NEW</div>
+        <img src="https://cdn.shopvnb.com/uploads/gallery/balo-cau-long-yonex-ba92012mex-trang-phoi-xanh-ngoc-gia-cong_1711678452.webp" alt="ba lo yonex" class="product-image" />
+        <p class="product-name">Ba lô Yonex xanh ngọc</p>
+        <p class="current-price">600.000 ₫</p>
+      </li>
+
+      <!-- Item 5 -->
+      <li class="product-item">
+        <img src="https://shopvnb.com/uploads/san_pham/balo-cau-long-yonex-b7312-den-vang-1.webp" alt="ba lô yonex" class="product-image" />
+        <p class="product-name">Ba lô Yonex vàng đen</p>
+        <p class="current-price">900.000 ₫</p>
+      </li>
+    </ul>
+  </div>
+</section>
+</div>
+       
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-grid">
+            <!-- Column 1 -->
+            <div class="footer-col">
+              <h3>THÔNG TIN CHUNG</h3>
+              <p><span class="highlight">NHN Sports</span> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sĩ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp</p>
+              <p><span class="highlight">Với sứ mệnh:</span> <span class="italic italic-custom">"NHN cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</span></p>
+              <p><span class="highlight">Tầm nhìn:</span> "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</p>
+            </div>
+      
+            <!-- Column 2 -->
+            <div class="footer-col">
+              <h3>THÔNG TIN LIÊN HỆ</h3>
+              <p><span>Hệ thống cửa hàng:</span> <span class="highlight">1 Super Center, 5 shop Premium và 68 cửa hàng trên toàn quốc</span></p>
+              <p><span class="highlight hoverable">Xem tất cả các cửa hàng NHN</span></p>
+              <p><span>Hotline:</span> <span class="highlight">0977508430 | 0338003008</span></p>
+              <p><span>Email:</span> <span class="highlight">info@shopNHN.com</span></p>
+              
+              <p><span>Hotline bán sĩ:</span> <span class="highlight">068595959</span></p>
+              
+              <div class="social-icons">
+                <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+      
+            <!-- Column 3 -->
+            <div class="footer-col">
+              <h3>CHÍNH SÁCH</h3>
+              <ul>
+                <li>Thông tin về chuyển và giao nhận</li>
+                <li>Chính sách đổi trả,hoàn tiền</li>
+                <li>Chính sách bảo hành</li>
+                <li>Chính sách xử lý khiếu nại</li>
+                <li>Chính sách vận chuyển</li>
+                <li>Điều khoản sử dụng</li>
+                <li>Chính Sách Bảo Mật Thông Tin</li>
+                <li>Chính sách nhượng quyền</li>
+              </ul>
+            </div>
+      
+            <!-- Column 4 -->
+            <div class="footer-col">
+              <h3>HƯỚNG DẪN</h3>
+              <ul>
+                <li>Danh sách số tài khoản chính thức của các shop trong hệ thống NHN Sports</li>
+                <li>Hướng dẫn cách chọn vợt cầu lông cho người mới chơi</li>
+                <li>Hướng dẫn thanh toán</li>
+                <li>Kiểm tra bảo hành</li>
+                <li>Kiểm tra đơn hàng</li>
+                <li>HƯỚNG DẪN MUA HÀNG</li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <p class="bold">Công ty TNHH NHN SPORTS</p>
+            <p>Địa chỉ: 390/2 Hà Huy Giáp,Phường Thanh Lộc, Quận 12, TPHCM</p>
+            <p>Email: info@shopvnb.com</p>
+            <p>GPKD số 0314496879 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 05/07/2017</p>
+            
+            
+          </div>
+        </footer>
+      </body>
+      </html>
+</body>
+</html>

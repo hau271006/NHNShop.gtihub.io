@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Categories</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body class="font-roboto bg-white text-[10px] leading-tight text-gray-700">
+  <header class="header">
+    <div class="header-container flex justify-between items-center p-4">
+      <!-- Logo và Navigation -->
+      <div class="header-left flex items-center">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.-i20YR2IKLzY0DX8Rx-RNQHaB1&pid=Api&P=0&h=180" alt="Logo" class="logo mr-4 w-24" />
+        <nav class="nav">
+          <ul class="nav-list flex gap-6 text-[12px]">
+            <li><a href="trangchu.html" class="nav-item ">TRANG CHỦ</a></li>
+            <li><a href="sanpham.html" class="nav-item">SẢN PHẨM</a></li>
+            <li><a href="tintuc.html" class="nav-item">TIN TỨC</a></li>
+            <li><a href="giamgia.html" class="nav-item active">GIẢM GIÁ</a></li>
+            <li><a href="huongdan.html" class="nav-item">HƯỚNG DẪN</a></li>
+            <li><a href="gioithieu.html" class="nav-item">GIỚI THIỆU</a></li>
+            <li><a href="hotro.html" class="nav-item">LIÊN HỆ</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Thanh tìm kiếm + Đăng nhập -->
+      <div class="header-actions flex items-center gap-4">
+        <div class="search-bar flex gap-2">
+          <input type="text" placeholder="Tìm sản phẩm..." class="p-2 border rounded text-sm" />
+          <button onclick="handleSearch()" class="p-2 bg-blue-500 text-white rounded text-sm">Tìm</button>
+        </div>
+        <div class="auth-links flex items-center gap-2 text-sm">
+          <a href="#" onclick="openModal('loginModal')">Đăng nhập</a> / 
+          <a href="#" onclick="openModal('registerModal')">Đăng ký</a>
+        </div>
+        <div class="cart flex items-center text-sm">
+          <span class="cart-icon text-xl">🛒</span>
+          <span class="cart-count ml-2" id="cart-count">2</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Modal Đăng Nhập -->
+  <div class="modal fixed inset-0 items-center justify-center bg-black bg-opacity-50 z-50 hidden" id="loginModal">
+    <div class="modal-content p-4 bg-white rounded shadow-lg w-[300px]">
+      <span class="close float-right cursor-pointer text-xl" onclick="closeModal('loginModal')">&times;</span>
+      <h2 class="text-lg mb-4">Đăng Nhập</h2>
+      <input type="text" placeholder="Email hoặc tên đăng nhập" class="p-2 mb-2 w-full border rounded" />
+      <input type="password" placeholder="Mật khẩu" class="p-2 mb-2 w-full border rounded" />
+      <button class="bg-blue-500 text-white p-2 w-full rounded">Đăng nhập</button>
+    </div>
+  </div>
+
+  <!-- Modal Đăng Ký -->
+  <div class="modal fixed inset-0 items-center justify-center bg-black bg-opacity-50 z-50 hidden" id="registerModal">
+    <div class="modal-content p-4 bg-white rounded shadow-lg w-[300px]">
+      <span class="close float-right cursor-pointer text-xl" onclick="closeModal('registerModal')">&times;</span>
+      <h2 class="text-lg mb-4">Đăng Ký</h2>
+      <input type="text" placeholder="Họ và tên" class="p-2 mb-2 w-full border rounded" />
+      <input type="email" placeholder="Email" class="p-2 mb-2 w-full border rounded" />
+      <input type="password" placeholder="Mật khẩu" class="p-2 mb-2 w-full border rounded" />
+      <button class="bg-blue-500 text-white p-2 w-full rounded">Đăng ký</button>
+    </div>
+  </div>
+
+  <script>
+    function handleSearch() {
+      const input = document.querySelector('.search-bar input').value;
+      alert("Đang tìm: " + input);
+    }
+
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+      document.getElementById(id).classList.add('flex');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('flex');
+      document.getElementById(id).classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
+
+
+    <!-- Main Content Section -->
+    <div class="max-w-[1200px] mx-auto flex gap-4 p-2"></div>
+      <!-- Filters -->
+      <div class="filter-section">
+        <!-- Mức giảm giá -->
+        <div>
+          <h3 class="filter-heading">MỨC GIẢM GIÁ</h3>
+          <div class="flex flex-col gap-1 text-[9px]">
+              <label class="filter-label"><input class="w-3 h-3" type="checkbox"/><span>20%</span></label>
+              <label class="filter-label"><input class="w-3 h-3" type="checkbox"/><span>30%</span></label>
+              <label class="filter-label"><input class="w-3 h-3" type="checkbox"/><span>40%</span></label>
+              <label class="filter-label"><input class="w-3 h-3" type="checkbox"/><span>50%</span></label>
+              <label class="filter-label"><input class="w-3 h-3" type="checkbox"/><span>60%</span></label>
+          </div>
+      </div>
+      <!-- Chọn mức giá -->
+      <div>
+          <h3 class="filter-heading">CHỌN MỨC GIÁ</h3>
+          <div class="flex flex-col gap-1 text-[9px]">
+              <label class="filter-label"><input class="w-3 h-3" type="checkbox"/><span>Giá dưới 500.000đ</span></label>
+              <label class="filter-label"><input class="w-3 h-3" type="checkbox"/><span>500.000đ - 1 triệu</span></label>
+              <label class="filter-label"><input class="w-3 h-3" type="checkbox"/><span>Giá trên 1 triệu</span></label>
+          </div>
+      </div>
+  </div>
+
+        <!-- Product Grid -->
+        <div class="main-content flex-1">
+            <h2 class="section-title mb-4">SẢN PHẨM THANH LÝ</h2>
+            <div class="product-grid grid grid-cols-4 gap-4">
+                <!-- Product 1 -->
+                <div class="product-item">
+                    <div class="relative">
+                        <span class="product-badge absolute top-2 left-2 bg-red-500 text-white p-1">Giảm 70%</span>
+                        <img alt="Áo Cầu Lông Leompos" class="product-image w-full h-auto" src="https://shopvnb.com/uploads/san_pham/ao-cau-long-yonex-a243-nam-trang-1.webp"/>
+                    </div>
+                    <div class="product-title text-sm font-bold">Áo Cầu Lông Leompos KW 1208 Họa Tiết Da Báo Trắng</div>
+                    <div class="product-price">70.000 đ</div>
+                    <div class="product-location text-xs">NHN Shop</div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <div class="relative">
+                        <span class="product-badge absolute top-2 left-2 bg-red-500 text-white p-1">Giảm 60%</span>
+                        <img alt="Giày Cầu Lông Adidas" class="product-image w-full h-auto" src="https://shopvnb.com/uploads/gallery/vot-cau-long-yonex-astrox-88d-play-chinh-hang-2.png"/>
+                    </div>
+                    <div class="product-title text-sm font-bold">Vợt cầu lông Yonex chính hãng</div>
+                    <div class="product-price">250.000 đ</div>
+                    <div class="product-location text-xs">NHN Shop</div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                  <div class="relative">
+                      <span class="product-badge absolute top-2 left-2 bg-red-500 text-white p-1">Giảm 20%</span>
+                      <img alt="Giày Cầu Lông Adidas" class="product-image w-full h-auto" src="https://dasxsport.vn/storage/du-balo-tui/z5027547978214-e8128f8dbeba446542e2e59d8608609a.jpg"/>
+                  </div>
+                  <div class="product-title text-sm font-bold">Giày Yonex xanh ngọc</div>
+                  <div class="product-price">678.000 đ</div>
+                  <div class="product-location text-xs">NHN Shop</div>
+              </div>
+              <!-- Product 4 -->
+              <div class="product-item">
+                <div class="relative">
+                    <span class="product-badge absolute top-2 left-2 bg-red-500 text-white p-1">Giảm 60%</span>
+                    <img alt="Giày Cầu Lông Adidas" class="product-image w-full h-auto" src="https://cdn.shopvnb.com/uploads/gallery/quan-cau-long-yonex-073-trang.webp"/>
+                </div>
+                <div class="product-title text-sm font-bold">quần lông cầu Yonex</div>
+                <div class="product-price">63.600 đ</div>
+                <div class="product-location text-xs">NHN Shop</div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-item">
+              <div class="relative">
+                  <span class="product-badge absolute top-2 left-2 bg-red-500 text-white p-1">Giảm 60%</span>
+                  <img alt="Giày Cầu Lông Adidas" class="product-image w-full h-auto" src="https://tuanvisport.com.vn/wp-content/uploads/2024/06/balo-cau-long-yonex-1408-gia-cong-4.jpg"/>
+              </div>
+              <div class="product-title text-sm font-bold">Ba lô Yonex</div>
+              <div class="product-price">273.000 đ</div>
+              <div class="product-location text-xs">NHN Shop</div>
+          </div>
+          <!-- Product 6 -->
+          <div class="product-item">
+            <div class="relative">
+                <span class="product-badge absolute top-2 left-2 bg-red-500 text-white p-1">Giảm 60%</span>
+                <img alt="Giày Cầu Lông Adidas" class="product-image w-full h-auto" src="https://storage.googleapis.com/a1aa/image/10c85872-492b-48cc-9076-3067b1cac037.jpg"/>
+            </div>
+            <div class="product-title text-sm font-bold">Giày Cầu Lông Adidas A-7014 Chính Hãng - Size 38</div>
+            <div class="product-price">63.600 đ</div>
+            <div class="product-location text-xs">NHN Shop</div>
+        </div>
+        <!-- Product 7 -->
+        <div class="product-item">
+          <div class="relative">
+              <span class="product-badge absolute top-2 left-2 bg-red-500 text-white p-1">Giảm 50%</span>
+              <img alt="Giày Cầu Lông Adidas" class="product-image w-full h-auto" src="https://product.hstatic.net/1000387607/product/ax100zz_59335e4f31b54dbaa6915b567423ff51_master.png"/>
+          </div>
+          <div class="product-title text-sm font-bold">Vợt yonex</div>
+          <div class="product-price">250.000 đ</div>
+          <div class="product-location text-xs">NHN Shop</div>
+      </div>
+      <!-- Product 8 -->
+      <div class="product-item">
+        <div class="relative">
+            <span class="product-badge absolute top-2 left-2 bg-red-500 text-white p-1">Giảm 40%</span>
+            <img alt="Giày Cầu Lông Adidas" class="product-image w-full h-auto" src="https://tuanhanhsports.vn/wp-content/uploads/2023/10/123445tui1-1536x1536.jpg"/>
+        </div>
+        <div class="product-title text-sm font-bold">Ba lô Yonex chính hãng</div>
+        <div class="product-price">300.000 đ</div>
+        <div class="product-location text-xs">NHN SHop </div>
+    </div>
+
+                <!-- Additional products... -->
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination mt-4 flex gap-2">
+                <button class="w-5 h-5 flex justify-center items-center bg-orange-600 text-white rounded active">1</button>
+                <button class="w-5 h-5 flex justify-center items-center border border-orange-600 rounded hover:bg-orange-600 hover:text-white">2</button>
+                <button class="w-5 h-5 flex justify-center items-center border border-orange-600 rounded hover:bg-orange-600 hover:text-white">3</button>
+                <button class="w-5 h-5 flex justify-center items-center border border-orange-600 rounded hover:bg-orange-600 hover:text-white">›</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleSearch() {
+            const input = document.querySelector('.search-bar input').value;
+            alert("Đang tìm: " + input);
+        }
+
+        function openModal(id) {
+            document.getElementById(id).style.display = "flex";
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    </script>
+    </main>
+    <body class="bg-white">
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-grid">
+            <!-- Column 1 -->
+            <div class="footer-col">
+              <h3>THÔNG TIN CHUNG</h3>
+              <p><span class="highlight">NHN Sports</span> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sĩ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp</p>
+              <p><span class="highlight">Với sứ mệnh:</span> <span class="italic italic-custom">"NHN cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</span></p>
+              <p><span class="highlight">Tầm nhìn:</span> "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</p>
+            </div>
+      
+            <!-- Column 2 -->
+            <div class="footer-col">
+              <h3>THÔNG TIN LIÊN HỆ</h3>
+              <p><span>Hệ thống cửa hàng:</span> <span class="highlight">1 Super Center, 5 shop Premium và 68 cửa hàng trên toàn quốc</span></p>
+              <p><span class="highlight hoverable">Xem tất cả các cửa hàng NHN</span></p>
+              <p><span>Hotline:</span> <span class="highlight">0977508430 | 0338003008</span></p>
+              <p><span>Email:</span> <span class="highlight">info@shopNHN.com</span></p>
+              
+              <p><span>Hotline bán sĩ:</span> <span class="highlight">068595959</span></p>
+              
+              <div class="social-icons">
+                <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+      
+            <!-- Column 3 -->
+            <div class="footer-col">
+              <h3>CHÍNH SÁCH</h3>
+              <ul>
+                <li>Thông tin về chuyển và giao nhận</li>
+                <li>Chính sách đổi trả,hoàn tiền</li>
+                <li>Chính sách bảo hành</li>
+                <li>Chính sách xử lý khiếu nại</li>
+                <li>Chính sách vận chuyển</li>
+                <li>Điều khoản sử dụng</li>
+                <li>Chính Sách Bảo Mật Thông Tin</li>
+                <li>Chính sách nhượng quyền</li>
+              </ul>
+            </div>
+      
+            <!-- Column 4 -->
+            <div class="footer-col">
+              <h3>HƯỚNG DẪN</h3>
+              <ul>
+                <li>Danh sách số tài khoản chính thức của các shop trong hệ thống NHN Sports</li>
+                <li>Hướng dẫn cách chọn vợt cầu lông cho người mới chơi</li>
+                <li>Hướng dẫn thanh toán</li>
+                <li>Kiểm tra bảo hành</li>
+                <li>Kiểm tra đơn hàng</li>
+                <li>HƯỚNG DẪN MUA HÀNG</li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <p class="bold">Công ty TNHH NHN SPORTS</p>
+            <p>Địa chỉ: 390/2 Hà Huy Giáp,Phường Thanh Lộc, Quận 12, TPHCM</p>
+            <p>Email: info@shopvnb.com</p>
+            <p>GPKD số 0314496879 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 05/07/2017</p>
+            
+            
+          </div>
+        </footer>
+      </body>
+      </html>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Cầu Lông NHN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #e35b2d;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .total {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .checkout-btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 30px;
+      background-color: #e35b2d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo NHN Sports">
+            </div>
+            <div class="hotline">
+                Hotline: <a href="tel:0123456789">0123456789</a> | <a href="0123456789">0123456789</a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                <button type="submit">Tìm</button>
+            </div>
+            <a href="dangnhap.html.html"><i class="fas fa-user"><style="height: 20px; margin-right: 5px;></style></i> Tài khoản</a>
+            <a href="#"><i class="fas fa-shopping-cart"><style="height: 20px; margin-right: 5px;"></style></i> Giỏ hàng</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="tintuc.html">TIN TỨC</a></li>
+                <li><a href="chinhsachmuahang.html">CHÍNH SÁCH MUA HÀNG</a></li>
+                <li><a href="huongdan.html">HƯỚNG DẪN</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="hotro.html">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1>Giỏ Hàng Của Bạn</h1>
+      
+        <table>
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Số lượng</th>
+              <th>Đơn giá</th>
+              <th>Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vợt Yonex Astrox 99</td>
+              <td>1</td>
+              <td>3.000.000đ</td>
+              <td>3.000.000đ</td>
+            </tr>
+            <!-- Thêm sản phẩm khác nếu cần -->
+          </tbody>
+        </table>
+      
+        <div class="total">Tổng cộng: 3.000.000đ</div>
+        <button class="checkout-btn">Thanh toán</button>
+    </main>
+</body>
+</html>

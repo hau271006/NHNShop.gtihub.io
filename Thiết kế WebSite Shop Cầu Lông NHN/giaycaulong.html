@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Cầu Lông NHN</title>
+  <link rel="stylesheet" href="chitietsanpham/css/style.css">
+  <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="logo">
+      <img src="chitietsanpham/img/logo.png" alt="Logo NHN Sports">
+    </div>
+    <div class="hotline">
+      Hotline: 
+      <a href="tel:0123456789">0123456789</a> | 
+      <a href="tel:0123456789">0123456789</a>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+      <button type="submit">Tìm</button>
+      <div id="search-results"></div>
+    </div>
+    <a href="dangnhap.html"><i class="fas fa-user" style="height:20px; margin-right:5px;"></i> Tài khoản</a>
+    <a href="giohang.html"><i class="fas fa-shopping-cart" style="height:20px; margin-right:5px;"></i> Giỏ hàng</a>
+  </div>
+</header>
+
+<nav>
+    <div class="container">
+      <ul class="menu">
+        <li><a href="trangchu.html">TRANG CHỦ</a></li>
+  
+        <li class="has-submenu">
+          <a href="sanpham.html" style="color: #e65c00;">SẢN PHẨM</a>
+          <ul class="submenu">
+            <li><a href="sanpham.html">Vợt cầu lông</a></li>
+            <li><a href="giaycaulong.html">Giày cầu lông</a></li>
+            <li><a href="quanao.html">Quần áo cầu lông</a></li>
+            <li><a href="tuivot.html">Túi vợt</a></li>
+            <li><a href="phukien.html">Phụ kiện</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="tintuc.html">TIN TỨC</a></li>
+        <li><a href="chinhsachmuahang.html">CHÍNH SÁCH MUA HÀNG</a></li>
+        <li><a href="huongdan.html">HƯỚNG DẪN</a></li>
+        <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+        <li><a href="hotro.html">LIÊN HỆ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <main>
+        <div class="container">
+            <aside class="sidebar">
+                <div class="sidebar-title">CHỌN MỨC GIÁ</div>
+                <div class="filter-group">
+                    <label><input type="checkbox"> Dưới 100.000 đ</label><br>
+                    <label><input type="checkbox"> 100.000 - 500.000 đ</label><br>
+                    <label><input type="checkbox"> 500.000 - 1.000.000 đ</label><br>
+                    <label><input type="checkbox"> 1 - 2 triệu</label><br>
+                    <label><input type="checkbox"> 2 - 3 triệu</label><br>
+                    <label><input type="checkbox"> Trên 3 triệu</label>
+                </div>
+
+                <div class="sidebar-title">THƯƠNG HIỆU</div>
+                <div class="filter-group">
+                    <label><input type="checkbox"> YONEX</label><br>
+                    <label><input type="checkbox"> LINING</label><br>
+                    <label><input type="checkbox"> VICTOR</label><br>
+                    <label><input type="checkbox"> PROACE</label><br>
+                    <label><input type="checkbox"> MIZUNO</label><br>
+                    <label><input type="checkbox"> FUCHS</label>
+                </div>
+
+                <div class="sidebar-title">CHI NHÁNH</div>
+                <div class="filter-group">
+                    <input type="text" placeholder="Tìm chi nhánh"><br>
+                    <label><input type="checkbox"> NHN Shop Center</label><br>
+                    <label><input type="checkbox"> Quận 1</label><br>
+                    <label><input type="checkbox"> Quận 11</label><br>
+                    <label><input type="checkbox"> Hà Nội</label><br>
+                </div>
+
+                <div class="sidebar-title">CHẤT LIỆU VỢT</div>
+                <div class="filter-group">
+                    <label><input type="checkbox"> 675 mm</label><br>
+                    <label><input type="checkbox"> 670 mm</label><br>
+                    <label><input type="checkbox"> Khác</label>
+                </div>
+            </aside>
+
+            <section class="product-list">
+                <div class="product-list-header">
+                    <h2 class="product-list-title">GIÀY CẦU LÔNG</h2>
+                    <div class="sort-by">
+                        <label for="sortOption">Sắp xếp theo:</label>
+                        <select id="sortOption">
+                            <option value="default">Mặc định</option>
+                            <option value="price-asc">Giá tăng dần</option>
+                            <option value="price-desc">Giá giảm dần</option>
+                            <option value="name-asc">Tên A-Z</option>
+                            <option value="name-desc">Tên Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <a href="chitietsanpham/vot-cau-long-carbon-training-150g.html">
+                            <img src="chitietsanpham/img/giay-cau-long-victor-a396-a-trang-chinh-hang_1745873894.png" alt="Giày cầu lông Victor A396 A">
+                            <span class="premium-badge"></span>
+                            <h3>Giày cầu lông Victor A396 A</h3>
+                            <p class="price">1.290.000</p>
+                        </a>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="chitietsanpham/vot-cau-long-v200.html">
+                            <img src="chitietsanpham/img/giay-cau-long-victor-p8500nlite-at-trang-tim-chinh-hang_1745873404.png" alt="Giày cầu lông Victor P8500Nlite AT">
+                            <span class="premium-badge">Premium</span>
+                            <h3>Giày cầu lông Victor P8500Nlite AT</h3>
+                            <p class="price">2.390.000 ₫</p>
+                        </a>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="chitietsanpham/vot-cau-long-vnb-v88-cam.html">
+                            <img src="chitietsanpham/img/giay-cau-long-taro-tr024-1-xanh-ngoc_1732235089.png" alt="Giày cầu lông Taro TR024-1">
+                            <span class="premium-badge">Premium</span>
+                            <h3>Giày cầu lông Taro TR024-1</h3>
+                            <p class="price">499.000 ₫</p>
+                        </a>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="chitietsanpham/vot-cau-long-redson-shape-esg.html">
+                            <img src="chitietsanpham/img/giay-cau-long-taro-tr024-2-trang-den_1732235436.png" alt="Giày cầu lông Taro TR024-2">
+                            <span class="premium-badge">Premium</span>
+                            <h3>Giày cầu lông Taro TR024-2</h3>
+                            <p class="price">499.000 ₫</p>
+                        </a>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="chitietsanpham/vot-cau-long-the-3rd-game-arc.html">
+                            <img src="chitietsanpham/img/giay-cau-long-yonex-aerus-z-men-flash-green-chinh-hang_1746231911.png" alt="Giày Cầu Lông Yonex Aerus Z Men Flash Green Chính Hãng">
+                            <span class="premium-badge"></span>
+                            <h3>Giày Cầu Lông Yonex Aerus Z Men Flash Green Chính Hãng</h3>
+                            <p class="price">2.689.000 ₫</p>
+                        </a>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="chitietsanpham/vot-cau-long-vnb-tc88c.html">
+                            <img src="chitietsanpham/img/giay-cau-long-victor-c90nlite-a-trang-chinh-hang_1745870700.png" alt="Giày cầu lông Victor C90Nlite A">
+                            <span class="premium-badge"></span>
+                            <h3>Giày cầu lông Victor C90Nlite A</h3>
+                            <p class="price">2.390.000 ₫</p>
+                        </a>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="chitietsanpham/vot-cau-long-vnb-v88-xanh.html">
+                            <img src="chitietsanpham/img/giay-cau-long-lining-aytu025-1-chinh-hang_1745634417.png" alt="Giày cầu lông Lining AYTU025-1 chính hãng">
+                            <span class="premium-badge">Premium</span>
+                            <h3>Giày cầu lông Lining AYTU025-1 chính hãng</h3>
+                            <p class="price">1.325.000 ₫</p>
+                        </a>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="chitietsanpham/vot-cau-long-yonex-astrox-99-lcw.html">
+                            <img src="chitietsanpham/img/giay-cau-long-yonex-shb-65x4-trang-2025-chinh-hang_1736972553.png" alt="Giày cầu lông Yonex SHB 65X4 2025">
+                            <span class="premium-badge"></span>
+                            <h3>Giày cầu lông Yonex SHB 65X4 2025</h3>
+                            <p class="price">1.809.000 ₫</p>
+                        </a>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <section class="order-form">
+                    <h2>Đặt Hàng Ngay</h2>
+                    <form action="xuly-donhang.php" method="post">
+                        <label for="hoten">Họ và Tên:</label><br>
+                        <input type="text" id="hoten" name="hoten" required><br><br>
+                
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                
+                        <label for="sdt">Số điện thoại:</label><br>
+                        <input type="tel" id="sdt" name="sdt" pattern="[0-9]{10}" required><br><br>
+                
+                        <label for="diachi">Địa chỉ giao hàng:</label><br>
+                        <textarea id="diachi" name="diachi" rows="3" cols="40" required></textarea><br><br>
+                
+                        <label for="sanpham">Chọn sản phẩm:</label><br>
+                        <select id="sanpham" name="sanpham">
+                            <option value="vot1">Vợt Cầu Lông Carbon Training</option>
+                            <option value="vot2">Vợt Cầu Lông VNB V88</option>
+                            <option value="vot3">Vợt Cầu Lông Yonex Astrox 99</option>
+                        </select><br><br>
+                
+                        <label>Hình thức thanh toán:</label><br>
+                        <input type="radio" name="thanhtoan" value="cod" checked> Thanh toán khi nhận hàng<br>
+                        <input type="radio" name="thanhtoan" value="bank"> Chuyển khoản<br><br>
+                
+                        <button type="submit">Gửi đơn hàng</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <h3>THÔNG TIN CHUNG</h3>
+            <p><span class="highlight">NHN Sports</span> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sĩ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp</p>
+            <p><span class="highlight">Với sứ mệnh:</span> <span class="italic italic-custom">"NHN cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</span></p>
+            <p><span class="highlight">Tầm nhìn:</span> "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</p>
+          </div>
+    
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <p><span>Hệ thống cửa hàng:</span> <span class="highlight">1 Super Center, 5 shop Premium và 68 cửa hàng trên toàn quốc</span></p>
+            <p><span class="highlight hoverable">Xem tất cả các cửa hàng NHN</span></p>
+            <p><span>Hotline:</span> <span class="highlight">0977508430 | 0338003008</span></p>
+            <p><span>Email:</span> <span class="highlight">info@shopNHN.com</span></p>
+            
+            <p><span>Hotline bán sĩ:</span> <span class="highlight">068595959</span></p>
+            
+            <div class="social-icons">
+              <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+    
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h3>CHÍNH SÁCH</h3>
+            <ul>
+              <li>Thông tin về chuyển và giao nhận</li>
+              <li>Chính sách đổi trả,hoàn tiền</li>
+              <li>Chính sách bảo hành</li>
+              <li>Chính sách xử lý khiếu nại</li>
+              <li>Chính sách vận chuyển</li>
+              <li>Điều khoản sử dụng</li>
+              <li>Chính Sách Bảo Mật Thông Tin</li>
+              <li>Chính sách nhượng quyền</li>
+            </ul>
+          </div>
+    
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h3>HƯỚNG DẪN</h3>
+            <ul>
+              <li>Danh sách số tài khoản chính thức của các shop trong hệ thống NHN Sports</li>
+              <li>Hướng dẫn cách chọn vợt cầu lông cho người mới chơi</li>
+              <li>Hướng dẫn thanh toán</li>
+              <li>Kiểm tra bảo hành</li>
+              <li>Kiểm tra đơn hàng</li>
+              <li>HƯỚNG DẪN MUA HÀNG</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <p class="bold">Công ty TNHH NHN SPORTS</p>
+          <p>Địa chỉ: 390/2 Hà Huy Giáp,Phường Thanh Lộc, Quận 12, TPHCM</p>
+          <p>Email: info@shopvnb.com</p>
+          <p>GPKD số 0314496879 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 05/07/2017</p>
+          
+          
+        </div>
+        <div class="googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.770411167079!2d106.66948868012008!3d10.980694527517857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1085e2b1c37%3A0x73bfa5616464d0ee!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7pyBE4bqndSBN4buZdA!5e0!3m2!1svi!2s!4v1745047183589!5m2!1svi!2s" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <script>
+      var BotStar={appId:"s0fabeb3f-ddc6-45ee-b862-2ba20b1ad61a",mode:"livechat"};
+      !function(t,a){
+          var e=function(){(e.q=e.q||[]).push(arguments)};
+          e.q=e.q||[],t.BotStarApi=e;
+          !function(){
+              var t=a.createElement("script");t.type="text/javascript",t.async=1,t.src="https://widget.botstar.com/static/js/widget.js";
+              var e=a.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)
+          }();
+      }(window,document)
+      </script>
+    <script src="js/search.js"></script>
+</body>
+</html>

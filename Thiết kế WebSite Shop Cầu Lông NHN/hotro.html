@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NHN Sports | Liên Hệ & Hỗ Trợ</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f8fa;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f8f8f8;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-left, .header-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    .hotline {
+      font-weight: bold;
+    }
+
+    .hotline a {
+      color: #007bff;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    .search-bar input {
+      padding: 6px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-right: 5px;
+    }
+
+    .search-bar button {
+      padding: 6px 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .header-right a {
+      margin-left: 15px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .header-right a i {
+      margin-right: 5px;
+    }
+
+    /* FORM CHÍNH */
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 12px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .info-box {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+    }
+
+    .info-box p {
+      margin: 8px 0;
+    }
+
+    .info-box strong {
+      color: #444;
+    }
+
+    /* FOOTER */
+    .footer {
+      background-color: #222;
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .footer h3 {
+      color: #18bdd3;
+    }
+
+    .highlight {
+      color: #0f93eb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo NHN Sports">
+      </div>
+      <div class="hotline">
+        Hotline:
+        <a href="tel:0123456789">0123456789</a> |
+        <a href="tel:0987654321">0987654321</a>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="search-bar">
+        <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+        <button type="submit">Tìm</button>
+      </div>
+      <a href="dangnhap.html"><i class="fas fa-user"></i> Tài khoản</a>
+      <a href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
+    </div>
+  </header>
+
+  <!-- FORM LIÊN HỆ -->
+  <div class="container">
+    <h2>Liên Hệ & Hỗ Trợ</h2>
+    <form action="xulylienhe.php" method="post">
+      <label for="name">Họ tên</label>
+      <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+
+      <label for="message">Nội dung cần hỗ trợ</label>
+      <textarea id="message" name="message" placeholder="Nhập nội dung..." required></textarea>
+
+      <button type="submit">Gửi yêu cầu</button>
+    </form>
+
+    <div class="info-box">
+      <p><strong>Hotline:</strong> 1900 6868</p>
+      <p><strong>Email:</strong> hotro@shoponline.vn</p>
+      <p><strong>Địa chỉ:</strong> 123 Đường ABC, Quận 1, TP. Hồ Chí Minh</p>
+      <p><strong>Giờ làm việc:</strong> Thứ 2 - Thứ 7, 8h00 - 17h30</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <h3>THÔNG TIN CHUNG</h3>
+    <p><span class="highlight">VNB Sports</span> cung cấp sĩ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp.</p>
+    <p><strong>Sứ mệnh:</strong> "NHN cam kết mang đến sản phẩm và dịch vụ tốt nhất phục vụ người chơi thể thao."</p>
+    <p><strong>Tầm nhìn:</strong> "Trở thành nhà phân phối và sản xuất thể thao ."</p>
+    <p><strong>Hệ thống:</strong> <span class="highlight">12 quận 12 tphcm</span></p>
+  </div>
+
+</body>
+</html>

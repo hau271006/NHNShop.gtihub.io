@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Đăng Ký</title>
+  <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9ecef;
+    }
+
+    /* Header */
+    .header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo img {
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    .hotline a {
+      color: white;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .search-bar input {
+      padding: 6px 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      width: 200px;
+    }
+
+    .search-bar button {
+      padding: 6px 12px;
+      background-color: white;
+      border: none;
+      border-radius: 4px;
+      color: #007bff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #e1e1e1;
+    }
+
+    .header-right a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .header-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container + Đăng ký */
+    .container {
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .form-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .form-box img {
+      display: block;
+      margin: 10px auto 20px auto;
+      width: 100px;  
+      height: auto;
+      border-radius: 12px;  
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    button {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .links a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .info {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .info h3 {
+      color: #10abc7;
+    }
+
+    .highlight {
+      color: #15bbc7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo NHN Sports">
+      </div>
+      <div class="hotline">
+        Hotline: <a href="tel:0123456789">0123456789</a> | <a href="tel:0123456789">0123456789</a>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="search-bar">
+        <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+        <button type="submit">Tìm</button>
+      </div>
+      <a href="dangnhap.html"><i class="fas fa-user"></i> Tài khoản</a>
+      <a href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
+    </div>
+  </header>
+
+  <!-- NỘI DUNG CHÍNH -->
+  <div class="container">
+    <div class="form-box">
+      <img src="img/logo.png" alt="Logo NHN Sports">
+      <h2>Đăng Ký</h2>
+      <form action="xulydangky.php" method="post">
+        <input type="text" name="username" placeholder="Tên đăng nhập" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Mật khẩu" required />
+        <input type="password" name="confirm_password" placeholder="Nhập lại mật khẩu" required />
+        <button type="submit">Đăng ký</button>
+      </form>
+      <div class="links">
+        <a href="dangnhap.html">← Quay lại đăng nhập</a>
+      </div>
+    </div>
+
+    <div class="info">
+      <h3>THÔNG TIN CHUNG</h3>
+      <p><span class="highlight">Shop cầu lông NHN</span> cung cấp sĩ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp.</p>
+      <p><strong>Sứ mệnh:</strong> "NHN cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</p>
+      <p><strong>Tầm nhìn:</strong> "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</p>
+      <h3>THÔNG TIN LIÊN HỆ</h3>
+      <p>Hệ thống cửa hàng: <span class="highlight">12 - Quận 2, TP.HCM</span></p>
+    </div>
+  </div>
+
+</body>
+</html>

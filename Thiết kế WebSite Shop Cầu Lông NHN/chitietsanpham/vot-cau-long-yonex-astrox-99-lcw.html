@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Cầu Lông NHN</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo NHN Sports">
+    </div>
+    <div class="hotline">
+      Hotline: 
+      <a href="tel:0123456789">0123456789</a> | 
+      <a href="tel:0123456789">0123456789</a>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+      <button type="submit">Tìm</button>
+      <div id="search-results"></div>
+    </div>
+    <a href="dangnhap.html"><i class="fas fa-user" style="height:20px; margin-right:5px;"></i> Tài khoản</a>
+    <a href="giohang.html"><i class="fas fa-shopping-cart" style="height:20px; margin-right:5px;"></i> Giỏ hàng</a>
+  </div>
+</header>
+
+<nav>
+    <div class="container">
+      <ul class="menu">
+        <li><a href="trangchu.html">TRANG CHỦ</a></li>
+  
+        <li class="has-submenu">
+          <a href="sanpham.html" style="color: #e65c00;">SẢN PHẨM</a>
+          <ul class="submenu">
+            <li><a href="sanpham.html">Vợt cầu lông</a></li>
+            <li><a href="giaycaulong.html">Giày cầu lông</a></li>
+            <li><a href="quanao.html">Quần áo cầu lông</a></li>
+            <li><a href="tuivot.html">Túi vợt</a></li>
+            <li><a href="phukien.html">Phụ kiện</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="tintuc.html">TIN TỨC</a></li>
+        <li><a href="chinhsachmuahang.html">CHÍNH SÁCH MUA HÀNG</a></li>
+        <li><a href="huongdan.html">HƯỚNG DẪN</a></li>
+        <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+        <li><a href="hotro.html">LIÊN HỆ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <main>
+        <div>
+            <div class="container3">
+                <div class="product-detail">
+                    <div class="product-image">
+                        <img src="img/vot-cau-long-yonex-astrox-99-lcw-2.png" alt="Vợt Cầu Lông Yonex Astrox 99 LCW" style="max-width: 400px;">
+                    </div>
+                    <div class="product-info">
+                        <h1>Vợt Cầu Lông Yonex Astrox 99 LCW</h1>
+                        <p><strong>Giá:</strong> <span style="color: red;">3.689.000 ₫</span></p>
+                        <p><strong>Thương hiệu:</strong> VNB</p>
+                        <p><strong>Chất liệu:</strong> Carbon tổng hợp siêu nhẹ</p>
+                        <p><strong>Khung vợt:</strong> Carbon High Modulus Graphite Carbon</p>
+                        <p><strong>Thân vợt:</strong> Carbon High Modulus Graphite Carbon</p>
+                        <p><strong>Chiều dài:</strong> 700 mm</p>
+                        <p><strong>Trọng lượng:</strong> 4U (84+-2gr)</p>
+                        <p><strong>Mô tả:</strong></p>
+                        <p>
+                            Dòng vợt cầu lông V200 Màu Đỏ phù hợp với người mới bắt đầu và cả vận động viên luyện tập.
+                            Thiết kế chắc chắn, màu sắc nổi bật, cảm giác cầm êm tay, hỗ trợ lực đập tốt.
+                        </p>
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="store-locations">
+                    <h3>ĐANG CÓ HÀNG TẠI</h3>
+                    <select class="location-filter">
+                        <option>Tất cả tỉnh thành</option>
+                        <option>TP. HCM</option>
+                        <option>Hà Nội</option>
+                        <!-- Thêm tỉnh khác nếu cần -->
+                    </select>
+                    <ul class="store-list">
+                        <li>NHN Super Center</li>
+                        <li>NHN PREMIUM Quận 1</li>
+                        <li>NHN PREMIUM Bình Thạnh</li>
+                        <li>NHN Quận 3</li>
+                        <li>NHN Quận 5</li>
+                        <li>NHN Quận 7</li>
+                        <li>NHN Quận 8</li>
+                        <li>NHN Quận 10</li>
+                        <li>NHN Quận 12</li>
+                        <li>NHN Củ Chi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order-review">
+                <section class="order-form">
+                    <h2>Đặt Hàng Ngay</h2>
+                    <form action="xuly-donhang.php" method="post">
+                        <label for="hoten">Họ và Tên:</label><br>
+                        <input type="text" id="hoten" name="hoten" required><br><br>
+                
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                
+                        <label for="sdt">Số điện thoại:</label><br>
+                        <input type="tel" id="sdt" name="sdt" pattern="[0-9]{10}" required><br><br>
+                
+                        <label for="diachi">Địa chỉ giao hàng:</label><br>
+                        <textarea id="diachi" name="diachi" rows="3" cols="40" required></textarea><br><br>
+                
+                        <label for="sanpham">Chọn sản phẩm:</label><br>
+                        <select id="sanpham" name="sanpham">
+                            <option value="vot1">Vợt Cầu Lông Yonex Astrox 99 LCW</option>
+                        </select><br><br>
+                
+                        <label>Hình thức thanh toán:</label><br>
+                        <input type="radio" name="thanhtoan" value="cod" checked> Thanh toán khi nhận hàng<br>
+                        <input type="radio" name="thanhtoan" value="bank"> Chuyển khoản<br><br>
+                
+                        <button type="submit">Gửi đơn hàng</button>
+                    </form>
+                </section>
+
+                <div class="review">
+                    <h3>Vợt Cầu Lông Yonex Astrox 99 LCW</h3>
+                    <p>Giới thiệu về Vợt Cầu Lông Yonex Astrox 99 LCW</p>
+                    <p>Vợt cầu lông Yonex Astrox 99 LCW là sản phẩm giới hạn được Yonex cho ra mắt nhằm tri ân Lee Chong Wei-Huyền thoại cầu lông đơn nam số 1 thế giới người Malaysia khi anh quyết định giải nghệ vì lí do sức khỏe. Tích hợp cho mình những công nghệ tối ưu và tân tiến nhất từ Yonex, Yonex Astrox 99 LCW hiện đang là cây vợt được nhiều người mong muốn sở hữu nó.</p>
+                    <p>Được đánh giá là một siêu phẩm rất đáng chờ đợi đến từ Yonex, cảm giác đầu tiên mang đến cho người trải nghiệm vợt là cảm giác rất đầm tay, là cây vợt nặng đầu nhất trong series Astrox của Yonex nhưng với công nghệ mới ROTATIONAL GENERATO SYSTEM lại tạo cho người chơi một cảm giác như đang dùng một cây vợt cân bằng. Vợt thiên cho lối đánh công với lối  đánh mạnh mẽ.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <h3>THÔNG TIN CHUNG</h3>
+            <p><span class="highlight">NHN Sports</span> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sĩ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp</p>
+            <p><span class="highlight">Với sứ mệnh:</span> <span class="italic italic-custom">"NHN cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</span></p>
+            <p><span class="highlight">Tầm nhìn:</span> "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</p>
+          </div>
+    
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <p><span>Hệ thống cửa hàng:</span> <span class="highlight">1 Super Center, 5 shop Premium và 68 cửa hàng trên toàn quốc</span></p>
+            <p><span class="highlight hoverable">Xem tất cả các cửa hàng NHN</span></p>
+            <p><span>Hotline:</span> <span class="highlight">0977508430 | 0338003008</span></p>
+            <p><span>Email:</span> <span class="highlight">info@shopNHN.com</span></p>
+            
+            <p><span>Hotline bán sĩ:</span> <span class="highlight">068595959</span></p>
+            
+            <div class="social-icons">
+              <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+    
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h3>CHÍNH SÁCH</h3>
+            <ul>
+              <li>Thông tin về chuyển và giao nhận</li>
+              <li>Chính sách đổi trả,hoàn tiền</li>
+              <li>Chính sách bảo hành</li>
+              <li>Chính sách xử lý khiếu nại</li>
+              <li>Chính sách vận chuyển</li>
+              <li>Điều khoản sử dụng</li>
+              <li>Chính Sách Bảo Mật Thông Tin</li>
+              <li>Chính sách nhượng quyền</li>
+            </ul>
+          </div>
+    
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h3>HƯỚNG DẪN</h3>
+            <ul>
+              <li>Danh sách số tài khoản chính thức của các shop trong hệ thống NHN Sports</li>
+              <li>Hướng dẫn cách chọn vợt cầu lông cho người mới chơi</li>
+              <li>Hướng dẫn thanh toán</li>
+              <li>Kiểm tra bảo hành</li>
+              <li>Kiểm tra đơn hàng</li>
+              <li>HƯỚNG DẪN MUA HÀNG</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <p class="bold">Công ty TNHH NHN SPORTS</p>
+          <p>Địa chỉ: 390/2 Hà Huy Giáp,Phường Thanh Lộc, Quận 12, TPHCM</p>
+          <p>Email: info@shopvnb.com</p>
+          <p>GPKD số 0314496879 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 05/07/2017</p>
+          
+          
+        </div>
+        <div class="googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.770411167079!2d106.66948868012008!3d10.980694527517857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1085e2b1c37%3A0x73bfa5616464d0ee!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7pyBE4bqndSBN4buZdA!5e0!3m2!1svi!2s!4v1745047183589!5m2!1svi!2s" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+</html>
